@@ -7,13 +7,11 @@
 body {
   position: relative;
   min-height: 100vh;
+  font-family: PT Sans;
 }
 
 .mobile,
-.header__container.mobile {
-  display: none;
-}
-
+.header__container.mobile,
 .burger-menu,
 .cart-mobile,
 .filters-submit,
@@ -47,14 +45,12 @@ header {
 
 .logo {
   color: #fff;
-  font-family: PT Sans;
   font-size: 28px;
   font-weight: 700;
 }
 
 .phone {
   color: #fff;
-  font-family: PT Sans;
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
@@ -96,7 +92,6 @@ header {
 
 .shipping {
   color: #fff;
-  font-family: PT Sans;
   font-size: 16px;
   font-weight: 400;
   text-underline-offset: 3px;
@@ -120,7 +115,6 @@ nav {
 .menu__item-link {
   text-decoration: none;
   color: #fff;
-  font-family: PT Sans;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -131,7 +125,6 @@ nav {
   gap: 9px;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: PT Sans;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
@@ -160,9 +153,7 @@ nav {
   position: relative;
   width: 264px;
   border: 1px solid #d0d0d0;
-
   color: #484848;
-  font-family: PT Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -176,7 +167,6 @@ nav {
 
 .dropdown__header {
   position: relative;
-
   margin: 13px 17px;
   display: flex;
   align-items: center;
@@ -198,7 +188,6 @@ nav {
   width: 13px;
   height: 12px;
   right: 0px;
-
   background-image: url(./assets/caret.svg);
 }
 
@@ -212,7 +201,6 @@ nav {
   transform: translateY(100%);
   overflow: hidden;
   transition: all 0.1s ease;
-
   z-index: 10;
 }
 
@@ -234,7 +222,6 @@ nav {
   display: flex;
   align-items: center;
   color: #484848;
-  font-family: PT Sans;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -320,7 +307,6 @@ main .wrapper {
 .products__item-huge__caption-title {
   margin-bottom: 4px;
   color: #333;
-  font-family: PT Sans;
   font-size: 20px;
   font-weight: 400;
 }
@@ -328,7 +314,6 @@ main .wrapper {
 .products__item-huge__caption-desc {
   margin-bottom: 20px;
   color: #989898;
-  font-family: PT Sans;
   font-size: 16px;
   font-weight: 400;
 }
@@ -337,7 +322,7 @@ main .wrapper {
   align-self: flex-end;
   margin-bottom: 8px;
   color: #989898;
-  font-family: PT Sans;
+
   font-size: 16px;
   font-weight: 400;
   text-decoration: line-through;
@@ -362,7 +347,6 @@ main .wrapper {
 }
 
 .products__item-huge__caption__price-value {
-  font-family: PT Sans;
   font-size: 20px;
   font-weight: 400;
 }
@@ -398,7 +382,6 @@ main .wrapper {
   width: 100%;
   text-align: left;
   color: #333;
-  font-family: PT Sans;
   font-size: 18px;
   font-weight: 400;
 }
@@ -406,7 +389,6 @@ main .wrapper {
 .products__item-desc {
   margin-bottom: 26px;
   color: #979797;
-  font-family: PT Sans;
   font-size: 14px;
   font-weight: 400;
 }
@@ -429,7 +411,6 @@ main .wrapper {
 }
 
 .products__item__price-value {
-  font-family: PT Sans;
   font-size: 20px;
   font-weight: 400;
 }
@@ -484,7 +465,6 @@ main .wrapper {
     align-items: center;
     width: 21px;
     height: 21px;
-
     color: #fff;
   }
 
@@ -664,7 +644,6 @@ main .wrapper {
     padding: 13px 0;
     text-transform: uppercase;
     color: #333;
-    font-family: PT Sans;
     font-size: 16px;
     font-weight: 700;
   }
