@@ -15,7 +15,9 @@ body {
 }
 
 .burger-menu,
-.cart-mobile {
+.cart-mobile,
+.filters-submit,
+.filters-close {
   display: none;
 }
 
@@ -140,4 +142,140 @@ nav {
 .shipping:hover {
   color: #fbff3d;
   cursor: pointer;
+}
+
+.filters {
+  margin-top: 25px;
+  margin-bottom: 23px;
+  display: flex;
+  gap: 27px;
+}
+
+.filters__container {
+  display: flex;
+  gap: 14px;
+}
+
+.dropdown {
+  position: relative;
+  width: 264px;
+  border: 1px solid #d0d0d0;
+
+  color: #484848;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.dropdown.active {
+  border-bottom: none;
+}
+
+.dropdown__header {
+  position: relative;
+
+  margin: 13px 17px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown.active .dropdown__header::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  bottom: -13px;
+  background-color: #d0d0d0;
+  z-index: 9;
+}
+
+.dropdown__header::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  right: 0px;
+
+  background-image: url(/assets/caret.svg);
+}
+
+.dropdown__list {
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  width: 264px;
+  list-style: none;
+  background-color: #fff;
+  transform: translateY(100%);
+  overflow: hidden;
+  transition: all 0.1s ease;
+
+  z-index: 10;
+}
+
+.dropdown.active .dropdown__list {
+  padding: 6px 0 10px 0;
+  border: 1px solid #d0d0d0;
+  border-top: none;
+}
+
+.dropdown__list-item {
+  padding: 7px 16px;
+}
+
+.dropdown__list-item:hover {
+  background: #e8eeff;
+}
+
+.filters__price {
+  display: flex;
+  align-items: center;
+  color: #484848;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.filters__price-block:nth-child(2n) {
+  margin-left: 14px;
+}
+
+.filters__price-block:nth-child(2n-1) {
+  margin-right: 9px;
+  border-left: none;
+}
+
+.filters__price-block {
+  height: 48px;
+  display: flex;
+  gap: 8px;
+  padding: 13px 10px;
+  border: 1px solid #d0d0d0;
+  width: 132px;
+}
+
+.filters__price-block input {
+  display: flex;
+  width: 81px;
+  flex: 1 1 81px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #000;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.filters__price-block input::placeholder {
+  color: #484848;
+}
+
+.filters-mobile {
+  display: none;
 }
