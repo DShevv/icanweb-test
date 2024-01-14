@@ -1,6 +1,12 @@
 const burgerBtn = document.querySelectorAll(".burger-menu");
 const menu = document.querySelector("nav");
 
+const filtersButton = document.querySelector(".filters-open");
+const filters = document.querySelector(".filters__wrapper");
+const filtersForm = document.querySelector(".filters");
+const filtersClose = document.querySelector(".filters-close");
+const filtersSubmit = document.querySelector(".filters-submit");
+
 document.addEventListener("click", (e) => {
   if (burgerBtn[0].contains(e.target) || burgerBtn[1].contains(e.target)) {
     menu.classList.toggle("active");
@@ -8,6 +14,15 @@ document.addEventListener("click", (e) => {
   } else {
     menu.classList.remove("active");
     document.body.classList.remove("scroll-lock");
+  }
+
+  if (e.target === filtersButton) {
+    filters.classList.add("active");
+  } else if (filtersForm.contains(e.target)) {
+    filtersClose.contains(e.target) && filters.classList.remove("active");
+    filtersSubmit === e.target && filters.classList.remove("active");
+  } else {
+    filters.classList.remove("active");
   }
 });
 
