@@ -99,3 +99,45 @@ header {
   font-weight: 400;
   text-underline-offset: 3px;
 }
+
+nav {
+  background: #1f497b;
+  height: 46px;
+  width: 100%;
+  z-index: 15;
+}
+
+.menu {
+  display: flex;
+  height: 100%;
+  gap: 39px;
+  align-items: center;
+  list-style: none;
+}
+
+.menu__item-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cart-link {
+  display: flex;
+  gap: 9px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.cart-link:hover,
+.menu__item-link:hover,
+.shipping:hover {
+  color: #fbff3d;
+  cursor: pointer;
+}
