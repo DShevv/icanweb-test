@@ -1,3 +1,16 @@
+const burgerBtn = document.querySelectorAll(".burger-menu");
+const menu = document.querySelector("nav");
+
+document.addEventListener("click", (e) => {
+  if (burgerBtn[0].contains(e.target) || burgerBtn[1].contains(e.target)) {
+    menu.classList.toggle("active");
+    document.body.classList.toggle("scroll-lock");
+  } else {
+    menu.classList.remove("active");
+    document.body.classList.remove("scroll-lock");
+  }
+});
+
 function connectDropdown(id) {
   const dropDown = document.querySelector(`#${id}`);
   const dropDownHeader = dropDown.querySelector(".dropdown__header");
