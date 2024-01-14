@@ -7,6 +7,9 @@ const filtersForm = document.querySelector(".filters");
 const filtersClose = document.querySelector(".filters-close");
 const filtersSubmit = document.querySelector(".filters-submit");
 
+const searchBtn = document.querySelector(".btn-search");
+const searchField = document.querySelector(".search-mobile");
+
 document.addEventListener("click", (e) => {
   if (burgerBtn[0].contains(e.target) || burgerBtn[1].contains(e.target)) {
     menu.classList.toggle("active");
@@ -23,6 +26,14 @@ document.addEventListener("click", (e) => {
     filtersSubmit === e.target && filters.classList.remove("active");
   } else {
     filters.classList.remove("active");
+  }
+
+  if (searchBtn.contains(e.target)) {
+    searchField.classList.toggle("active");
+  } else {
+    if (!searchField.contains(e.target)) {
+      searchField.classList.remove("active");
+    }
   }
 });
 
