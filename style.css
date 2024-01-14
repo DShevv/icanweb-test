@@ -3,3 +3,99 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.mobile,
+.header__container.mobile {
+  display: none;
+}
+
+.burger-menu,
+.cart-mobile {
+  display: none;
+}
+
+header {
+  height: 73px;
+  background: #265c9a;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1128px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 86px;
+  flex-grow: 0;
+}
+
+.logo {
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.phone {
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1px;
+  background-color: transparent;
+  gap: 7px;
+  border-bottom: solid 1px #517dae;
+  width: 280px;
+}
+
+.search-icon {
+  width: 13px;
+  height: 13px;
+  color: #fff;
+}
+
+#search {
+  flex: 1 1 auto;
+  height: 21px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#search::placeholder {
+  color: #fff;
+}
+
+.shipping {
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  text-underline-offset: 3px;
+}
